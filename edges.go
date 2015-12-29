@@ -42,7 +42,7 @@ func NewEdges() *Edges {
 
 //Adds an Edge to the set of Edges.
 func (this *Edges) Add(edge *Edge) {
-	if _, ok := this.SrcToDsts[edge.Src]; !ok {
+	/*if _, ok := this.SrcToDsts[edge.Src]; !ok {
 		this.SrcToDsts[edge.Src] = make(map[string]*Edge)
 	}
 	if _, ok := this.SrcToDsts[edge.Src][edge.Dst]; !ok {
@@ -55,7 +55,7 @@ func (this *Edges) Add(edge *Edge) {
 	}
 	if _, ok := this.DstToSrcs[edge.Dst][edge.Src]; !ok {
 		this.DstToSrcs[edge.Dst][edge.Src] = edge
-	}
+	} */
 	this.Edges = append(this.Edges, edge)
 }
 
